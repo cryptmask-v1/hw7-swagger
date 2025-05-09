@@ -7,6 +7,9 @@
   },
   "servers": [
     {
+      "url": "https://hw7-swagger-u5ub.onrender.com"
+    },
+    {
       "url": "http://localhost:5000"
     }
   ],
