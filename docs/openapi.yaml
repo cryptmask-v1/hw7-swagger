@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: API for managing contacts
 servers:
-  - url: http://localhost:5000
+  - url: https://hw7-swagger-u5ub.onrender.com
 paths:
   /contacts:
     get:
