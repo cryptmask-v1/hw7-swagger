@@ -1,0 +1,52 @@
+type: object
+required:
+  - name
+  - phoneNumber
+  - isFavourite
+  - contactType
+  - userId
+properties:
+  _id:
+    type: string
+    description: Unique identifier for the contact
+    example: 60d5ec49b3f1f8c8a4e4b8c2
+
+  name:
+    type: string
+    description: Name of the contact
+    example: John Doe
+
+  phoneNumber:
+    type: string
+    description: Phone number of the contact
+    example: +1234567890
+
+  email:
+    type: string
+    format: email
+    description: Email address of the contact
+    example: johndoe@example.com
+
+  isFavourite:
+    type: boolean
+    description: Indicates if the contact is a favorite
+    example: true
+
+  contactType:
+    type: string
+    description: Type of contact (e.g., personal, home, work)
+    enum:
+      - personal
+      - home
+      - work
+    example: personal
+
+  userId:
+    type: string
+    description: Unique identifier for the user who owns the contact
+    example: 60d5ec49b3f1f8c8a4e4b8c1
+
+  photo:
+    type: string
+    format: binary
+    description: File upload for contact's photo
